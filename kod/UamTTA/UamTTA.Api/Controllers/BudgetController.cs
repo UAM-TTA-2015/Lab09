@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Linq;
 using System.Web.Http;
 using UamTTA.Api.Models;
 using UamTTA.Model;
@@ -43,6 +45,20 @@ namespace UamTTA.Api.Controllers
         public Budget CreateBudget(int templateId)
         {
             return _budgetService.CreateBudgetFromTemplate(templateId, DateTime.Today);
+
+        }
+
+        [Route("api/budgets")]
+        [HttpGet]
+        public IEnumerable<BudgetModel> GetBudgets()
+        {
+            return _budgetService.GetAllBudgets().Select(x => new BudgetModel
+            {
+                Duration = x.Duration,
+                ValidFrom = x.ValidFrom,
+                ValidTo = x.ValidTo,
+                Name = x.Name
+            });
         }
     }
 }

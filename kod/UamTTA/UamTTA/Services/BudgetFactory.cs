@@ -19,16 +19,28 @@ namespace UamTTA.Services
                     break;
 
                 case Duration.Quarterly:
+                    endDate = Quarterly(startDate);
                     break;
 
                 case Duration.Yearly:
+                    endDate = AddYear(startDate);
                     break;
 
                 default:
                     throw new ArgumentOutOfRangeException();
             }
 
-            return new Budget {ValidFrom = startDate, ValidTo = endDate};
+            return new Budget { ValidFrom = startDate, ValidTo = endDate };
+        }
+
+        private static DateTime AddYear(DateTime startDate)
+        {
+            return startDate.AddYears(1).AddDays(-1);
+        }
+
+        private static DateTime Quarterly(DateTime startDate)
+        {
+            return startDate.AddMonths(3).AddDays(-1);
         }
 
         private static DateTime AddWeek(DateTime startDate)

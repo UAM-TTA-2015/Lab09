@@ -68,12 +68,26 @@
     <Compile Include="Migrations\201511251749296_UpdateStructure.Designer.cs">
       <DependentUpon>201511251749296_UpdateStructure.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201512022205169_RelationStructureForBudget.cs" />
+    <Compile Include="Migrations\201512022205169_RelationStructureForBudget.Designer.cs">
+      <DependentUpon>201512022205169_RelationStructureForBudget.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512022206495_RelationStructureForBudget2.cs" />
+    <Compile Include="Migrations\201512022206495_RelationStructureForBudget2.Designer.cs">
+      <DependentUpon>201512022206495_RelationStructureForBudget2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201512022211345_RelationStructureForBudget3.cs" />
+    <Compile Include="Migrations\201512022211345_RelationStructureForBudget3.Designer.cs">
+      <DependentUpon>201512022211345_RelationStructureForBudget3.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Model\Account.cs" />
     <Compile Include="Model\Budget.cs" />
+    <Compile Include="Services\AccountService.cs" />
     <Compile Include="Services\BudgetFactory.cs" />
     <Compile Include="Model\BudgetTemplate.cs" />
     <Compile Include="Model\Duration.cs" />
+    <Compile Include="Services\IAccountService.cs" />
     <Compile Include="Tools\EnumerableExtensions.cs" />
     <Compile Include="Model\IEntity.cs" />
     <Compile Include="Model\ModelBase.cs" />
@@ -102,6 +116,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201511251749296_UpdateStructure.resx">
       <DependentUpon>201511251749296_UpdateStructure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512022205169_RelationStructureForBudget.resx">
+      <DependentUpon>201512022205169_RelationStructureForBudget.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512022206495_RelationStructureForBudget2.resx">
+      <DependentUpon>201512022206495_RelationStructureForBudget2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201512022211345_RelationStructureForBudget3.resx">
+      <DependentUpon>201512022211345_RelationStructureForBudget3.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

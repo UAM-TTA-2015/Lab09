@@ -6,6 +6,6 @@ namespace UamTTA.GUI.Controllers
 	{
 		MainWindowViewModel ViewModel { get; set; }
 
-		void OnGetBudget();
+		void OnGetBudgets();
 	}
 }

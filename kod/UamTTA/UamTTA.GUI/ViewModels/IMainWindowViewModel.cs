@@ -6,7 +6,7 @@ namespace UamTTA.GUI.ViewModels
 {
     public interface IMainWindowViewModel
     {
-        ICollection<Budget> Budgets { get; }
+        IEnumerable<Budget> Budgets { get; set; }
 
         ICommand GetBudgetsCommand { get; }
     }

@@ -6,6 +6,6 @@ namespace UamTTA.GUI.Models
 {
     public interface IBudgetService
     {
-        Task<ICollection<Budget>> GetBudgetsAsync();
+        Task<IEnumerable<Budget>> GetBudgetsAsync();
     }
 }
