@@ -27,6 +27,10 @@ Nasze API będzie wystawione poprzez ASP.NET MVC 5 / WebAPI 2 i będzie zgodne z
 * [Narzędzie do testowania wywołań REST z Chrome - Postman](https://chrome.google.com/webstore/detail/postman/fhbjgbiflinjbdggehcddcbncdddomop)
 * [Tutorial ASP.NET Web API 2](http://www.asp.net/web-api/overview/getting-started-with-aspnet-web-api/tutorial-your-first-web-api)
 
+Materiały o wielolowątkowści i programowaniu asynchronicznym
+* [Threading in C# - Joseph Albahari](http://www.albahari.com/threading/)
+* [Asynchronous Programming with Async and Await](https://msdn.microsoft.com/pl-pl/library/hh191443.aspx)
+
 Kod powstały na zajęciach będzie budowany przez build server TeamCity:
 * [Informacje o TeamCity](https://www.jetbrains.com/teamcity/)
 * [Nasz serwer TeamCity](http://tta2015z.vm.wmi.amu.edu.pl:8111/)
